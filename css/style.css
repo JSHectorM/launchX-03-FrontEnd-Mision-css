@@ -1,0 +1,25 @@
+
+/* 
+Gama de colores
+Azul btn -> #3656d4
+Azul titulo-nav -> #2a4ac8
+Azul titulo-main -> #1f3e72
+*/
+
+/* 
+font-weight
+300
+400
+700 
+*/
+
+* {
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+
+}
