@@ -13,13 +13,118 @@ font-weight
 700 
 */
 
-* {
-    padding: 0 ;
+*, 
+::after,
+::before {
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --azul-btn: #3656d4;
+    --azul-titulo-nav: #2a4ac8;
+    --azul-titulo-main: #1f3e72;
+    --body-font : 'Roboto', sans-serif;
+    --padding-container: 60px 0;
+    --color-p: #6d7b93;
+
+}
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--body-font);
     background-color: #fff;
+}
+
+/* * Aqui esya el outline */
+
+main, section, a ,p , h1, h2, h3, img, .btn  {
+    outline: 1px solid #000;
+}
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1900px;
+    padding: 40px 0;
+    overflow: hidden;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+nav .title {
+    font-size: 1.5em;
+    display: block;
+    color: var(--azul-titulo-nav);
+    font-weight: 700;
+}
+
+nav .link {
+    color: rgb(117, 116, 116);
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 3rem;
+    font-weight: 700;
+}
+
+nav .link:first-of-type {
+    margin-left: auto;
+}
+
+.btn {
+    background-color: var(--azul-btn);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 10px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+nav .btn {
+    margin-left: 2.2rem;
+}
+
+/* main */
+img {width: 100%;}
+
+main .intro {
+    /* color: #ccc; */
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+main .intro .info {
+    width: 50%;
+    /* align-self: center; */
+}
+main .intro .info h1 {
+    color: var(--azul-titulo-main);
+    font-size: 4rem;
+    padding: 3rem 0 1rem 0;
+}
+
+main .intro .info p{
+    color: var(--color-p);
+    line-height: 1.8em;
+    margin-bottom: 2em;
+}
+main .intro .info .link {
+    text-decoration: none;
+    color: var(--color-p);
+    font-weight: 700;
+    margin-right: 2em;
+
+}
+
+main .intro .img {
+    width: 50%;
+}
+main .intro .vac-bar {
+    width: 70%;
+    /* position: absolute; */
+    align-self: flex-end;
+    /* margin-bottom: 2rem; */
 
 }
