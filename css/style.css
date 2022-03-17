@@ -35,7 +35,7 @@ body{
 
 /* * Aqui esya el outline */
 
-main, section, a ,p , h1, h2, h3, img, .btn  {
+main, section, a ,p , h1, h2, h3, img , div {
     outline: 1px solid #000;
 }
 
@@ -80,8 +80,23 @@ nav .link:first-of-type {
     padding: 10px 10px;
     width: 120px;
     border-radius: 5px;
+    appearance: button;
+    backface-visibility: hidden;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    text-transform: none;
+    font-size: 100%;
 }
 
+.btn:disabled {
+    cursor: default;
+}
+.btn:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
 nav .btn {
     margin-left: 2.2rem;
 }
@@ -118,13 +133,56 @@ main .intro .info .link {
 
 }
 
+main .info  img {
+    width: 16px;
+    margin-right: 10px;
+}
+
 main .intro .img {
     width: 50%;
 }
 main .intro .vac-bar {
-    width: 70%;
+    /* width: 70%; */
     /* position: absolute; */
     align-self: flex-end;
     /* margin-bottom: 2rem; */
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: -6px 5px 16px 1px rgba(54,86,212,0.39);
+    /* width: 70%; */
+}
+main .intro .vac-bar .item-bar{
 
+    display: inline-block;
+    /* font-size: 1.2rem; */
+
+}
+
+main .intro .vac-bar .item-bar .img{
+    display: inline-block;
+    width: 16px;
+    margin-right: 10px;
+}
+main .intro .vac-bar .item-bar img {
+    width: 100%;
+    
+}
+main .intro .vac-bar .item-bar h3 {
+    display: inline-block;
+    font-weight: 400;
+
+}
+main .intro .vac-bar .item-bar p {
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+main .intro .vac-bar button {
+    /* display: inline-block; */
+    margin: 2rem;
+}
+main .bramds {
+    
 }
