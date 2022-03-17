@@ -49,6 +49,9 @@ main, section, a ,p , h1, h2, h3, img , div {
     overflow: hidden;
 
 }
+p{
+    color: var(--color-p);
+}
 
 nav {
     display: flex;
@@ -183,6 +186,58 @@ main .intro .vac-bar button {
     /* display: inline-block; */
     margin: 2rem;
 }
-main .bramds {
-    
+main .brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+main .brands img {
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+    opacity: 0.1;
+
+}
+
+/* main .question {
+
+} */
+
+main .question h2 {
+    font-weight: 700;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+main .question p {
+    width: 50%;
+    margin-bottom: 3em;
+}
+
+main .cards {
+    display: flex;
+}
+
+main .cards .card {
+    margin: 10px;
+    padding: 30px;
+    outline: 1px solid rgba(204, 204, 204, 0.301);
+    border-radius: 5px;
+}
+
+main .cards .card:hover {
+    cursor: pointer;
+    box-shadow: -6px 5px 16px 1px rgba(54,86,212,0.39);
+}
+
+ main .cards .card .logo {
+     width: 25px;
+ }
+ main .cards .card h3 {
+     margin: 1rem 0;
+ }
+ main .cards .card p {
+     margin-bottom: 1rem;
+ }
+ 
