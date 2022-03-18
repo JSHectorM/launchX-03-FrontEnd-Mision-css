@@ -36,7 +36,7 @@ body{
 /* * Aqui esya el outline */
 
 main, section, a ,p , h1, h2, h3, img , div {
-    outline: 1px solid #000;
+    /* outline: 1px solid #000; */
 }
 
 
@@ -240,4 +240,49 @@ main .cards .card:hover {
  main .cards .card p {
      margin-bottom: 1rem;
  }
- 
+
+ main .preparation {
+     display: flex;
+     margin: 4rem 0;
+ }
+
+main .preparation .img {
+    width: 50%;
+}
+
+main .preparation .info {
+    width: 50%;
+}
+
+main .preparation .info h2 {
+    margin: 2rem 0;
+    color: var(--azul-titulo-main);
+}
+
+main .preparation .info p {
+    line-height: 1.7em;
+    margin-bottom: 2rem;
+}
+main .preparation .info .cards {
+    flex-direction: column;
+}
+main .preparation .info .cards .card {
+    padding: 15px;
+    margin: 0;
+    /* width: 70%; */
+}
+
+main .preparation .info .cards .logo {
+    display: inline-block;
+}
+
+main .preparation .info .cards h3 {
+    display: inline-block;
+}
+main .preparation .info .cards p{
+    width: 80%;
+}
+
+main .contac {
+    display: flex;
+}
