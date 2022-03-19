@@ -26,6 +26,7 @@ font-weight
     --body-font : 'Roboto', sans-serif;
     --padding-container: 60px 0;
     --color-p: #6d7b93;
+    --azul-footer: #eef3ff;
 
 }
 body{
@@ -44,7 +45,7 @@ main, section, a ,p , h1, h2, h3, img , div {
 .container {
     width: 90%;
     margin: 0 auto;
-    max-width: 1900px;
+    max-width: 1440px;
     padding: 40px 0;
     overflow: hidden;
 
@@ -92,6 +93,7 @@ nav .link:first-of-type {
     text-align: center;
     text-transform: none;
     font-size: 100%;
+    border: none;
 }
 
 .btn:disabled {
@@ -208,6 +210,8 @@ main .question h2 {
     font-weight: 700;
     margin-top: 3em;
     margin-bottom: 1em;
+    color: var(--azul-titulo-main);
+    font-size: 3rem;
 }
 
 main .question p {
@@ -255,6 +259,9 @@ main .preparation .info {
 }
 
 main .preparation .info h2 {
+    font-weight: 700;
+    color: var(--azul-titulo-main);
+    font-size: 3rem;
     margin: 2rem 0;
     color: var(--azul-titulo-main);
 }
@@ -267,7 +274,7 @@ main .preparation .info .cards {
     flex-direction: column;
 }
 main .preparation .info .cards .card {
-    padding: 15px;
+    padding: 15px 10px;
     margin: 0;
     /* width: 70%; */
 }
@@ -285,4 +292,104 @@ main .preparation .info .cards p{
 
 main .contac {
     display: flex;
+}
+
+main .contac .info {
+    width: 50%;
+}
+
+main .contac .info h2 {
+    font-weight: 700;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    color: var(--azul-titulo-main);
+    font-size: 3rem;
+
+}
+
+main .contac .info p {
+    line-height: 1.7em;
+    margin-bottom: 2rem;
+}
+
+main .contac .info .cards {
+    /* width: 100%; */
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+main .contac .info .cards .card .logo {
+    width: 35px;
+    display: inline-block;
+}
+main .contac .info .cards .card .logo img{
+    width: 100%;
+}
+
+main .contac .info .cards .card .logo h3 {
+    display: inline-block;
+}
+
+main .contac .info .cards .card .btn {
+    width: 160px;
+    background-color: var(--azul-footer);
+    color: var(--azul-btn);
+    border: none;
+}
+main .contac .info .cards .card .btn:hover{
+    background-color: var(--azul-btn);
+    color: #fff;
+}
+
+main .contac .img {
+    width: 50%;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--azul-footer);
+}
+
+footer .container {
+    display: flex;
+}
+
+footer .leyenda {
+    width: 50%;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+footer .leyenda h3 {
+    color: var(--azul-btn);
+}
+footer .leyenda p {
+    width: 50%;
+}
+footer .leyenda .copy {
+    margin-top: 2.8rem;
+}
+
+footer .term {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+footer .term section{
+    margin: 1.2rem;
+    color: var(--color-p);
+}
+
+footer .term h3 {
+    margin-bottom: 1rem;
+    color: var(--azul-btn);
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
 }
